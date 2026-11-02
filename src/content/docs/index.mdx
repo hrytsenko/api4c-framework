@@ -1,0 +1,41 @@
+---
+title: API4C Framework
+template: splash
+hero:
+  tagline: A framework for governing APIs.
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+The framework follows three key approaches: **contract first**, **everything as code**, and **shift left**. The contract-first approach recognizes contracts as a primary outcome and a source of truth. The everything-as-code approach treats code as a primary medium. The shift-left approach moves practices and tools closer to developers.
+
+The framework identifies four pillars: **circulation** and **consistency**, evolutionary pillars for developer productivity; **continuity** and **conformance**, operational pillars for customer satisfaction.
+
+:::tip[Getting started]
+
+1. Share contracts via a **registry** for circulation.
+2. Enforce decisions via a **linter** for consistency.
+3. Detect changes via a **detector** for continuity.
+4. Inspect behaviors via a **proxy** for conformance.
+
+:::
+
+<CardGrid>
+	<LinkCard
+		title="Pillars"
+		description="The four pillars of API governance: circulation, consistency, continuity, and conformance."
+		href={`${base}/pillars/`}
+	/>
+	<LinkCard
+		title="Documents"
+		description="What to include in the documents that the pillars ask to publish: guides and policies."
+		href={`${base}/documents/`}
+	/>
+	<LinkCard
+		title="Practices"
+		description="The practices that support the pillars: skills and toolkits."
+		href={`${base}/practices/`}
+	/>
+</CardGrid>
