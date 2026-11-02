@@ -2,7 +2,7 @@
 
 A framework for governing APIs.
 
-Published at [hrytsenko.github.io/api4c-framework](https://hrytsenko.github.io/api4c-framework/).
+Published at [Hrytsenko - API4C Framework](https://hrytsenko.github.io/api4c-framework/).
 
 ## Content
 
