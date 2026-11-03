@@ -58,4 +58,6 @@ Decide on capabilities for **queries**, including filtering, sorting, pagination
 
 Decide on semantics for batch, long-running, and upload **tasks**. Consider per-item results for batches, so that clients retry only failed items. Consider task resources that clients poll for status and results of long-running tasks. Consider multipart transfers for uploads of large payloads.
 
+Decide on semantics for **events**, including payloads, delivery, and ordering. Consider [CloudEvents](https://cloudevents.io/) envelopes with thin payloads that identify changed resources, so that clients fetch the current state rather than act on a stale one. Consider at-least-once delivery with retries, and expect clients to deduplicate events by identifier and tolerate them out of order.
+
 Examples: [Zalando: Batch & Bulk requests](https://opensource.zalando.com/restful-api-guidelines/#152), [Adidas: Long running tasks](https://adidas.gitbook.io/api-guidelines/rest-api-guidelines/execution/long-running-tasks).
