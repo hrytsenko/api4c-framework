@@ -2,7 +2,7 @@
 title: Toolkits
 description: Reduce consumer friction with toolkits.
 sidebar:
-  order: 2
+  order: 3
 ---
 
 ## Intent
