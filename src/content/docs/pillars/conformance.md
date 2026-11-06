@@ -13,11 +13,11 @@ Conformance aims for the correctness of behaviors. It relies on tests, proxies, 
 
 ## Concerns
 
-- **Broken expectations** occur when teams neglect to verify what consumers rely on. This increases customer disruption due to changes in behaviors that consumers rely on.
-- **Unintended integrations** occur when teams neglect to verify behaviors against specifications. This increases customer disruption due to dependencies on behaviors outside the contract.
+- **Behavioral regressions** stem from checking that a specification stays compatible but not that the service still behaves as promised, so a change breaks a scenario that nobody tests, and consumers hit the failure in production.
+- **Emergent contracts** stem from testing that services do what specifications promise but not that they do nothing more, so consumers come to rely on the extra behaviors, and providers break those consumers with changes they believe are safe.
 
 ## Actions
 
-- Publish **tests** to verify behaviors that consumers rely on.
-- Adopt **proxies** to validate requests and responses against specifications.
-- Adopt **fuzzers** to test behaviors against specifications with generated requests.
+- Publish **tests** to verify that services behave as specifications promise, scenario by scenario.
+- Adopt **proxies** to flag requests and responses that specifications do not describe.
+- Adopt **fuzzers** to uncover behaviors outside specifications with generated requests.

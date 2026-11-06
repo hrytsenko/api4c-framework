@@ -40,8 +40,7 @@ Pillar aims for ... It relies on [documents](/api4c-framework/documents/...) to 
 
 ## Concerns
 
-- **Name** occurs when teams neglect to ... This delays ... due to ...
-- **Name** occurs when teams neglect to ... This increases ... due to ...
+- **Name** stems from ..., so ...
 
 ## Actions
 

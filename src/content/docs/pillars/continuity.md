@@ -13,8 +13,8 @@ Continuity aims for the compatibility of changes. It relies on [policies](/api4c
 
 ## Concerns
 
-- **Unclear expectations** occur when teams neglect to define how APIs change and how long versions live. This delays adoption due to uncertainty about future changes.
-- **Disrupted integrations** occur when teams neglect to automate compatibility checks. This increases customer disruption due to incompatible changes.
+- **Rushed migrations** stem from leaving versioning, compatibility, and lifecycle undefined, so consumers cannot tell which changes will break them or how long versions will live, and get caught off guard when versions retire.
+- **Silent breakages** stem from spot-checking compatibility by hand, so incompatible changes ship without a version bump or a changelog, leaving consumers to debug failures on their own.
 
 ## Actions
 

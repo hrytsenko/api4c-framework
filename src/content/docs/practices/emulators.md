@@ -12,7 +12,7 @@ Enable exploration and testing of integrations with emulators that consumers run
 ## Approach
 
 - Generate stateless **mocks** from specifications and serve them locally and in portals, so consumers explore contracts and start integrating as soon as contracts are published. Vary what contracts leave open, such as the order of items and the presence of optional fields.
-- Provide stateful **emulators** that consumers run locally and in CI, so they test multi-step workflows, webhooks, and failure handling. Let the teams that own APIs maintain emulators, verify them with the same tests as implementations, and release them for every API version. Leave to real integration only what emulators cannot reproduce, such as quotas and latency.
+- Provide stateful **emulators** that consumers run locally and in pipelines, so they test multi-step workflows, webhooks, and failure handling. Let the teams that own APIs maintain emulators, verify them with the same tests as implementations, and release them for every API version. Leave to real integration only what emulators cannot reproduce, such as quotas and latency.
 
 ## Examples
 

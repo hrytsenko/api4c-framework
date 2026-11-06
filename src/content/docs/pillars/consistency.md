@@ -9,16 +9,15 @@ sidebar:
 >
 > — Murphy's law
 
-Consistency aims for the replicability of decisions. It relies on [guides](/api4c-framework/documents/guides/) to collect known decisions and linters to enforce them.
+Consistency aims for the replicability of decisions. It relies on [guides](/api4c-framework/documents/guides/) to collect known decisions, rulesets to encode them, and linters to enforce them.
 
 ## Concerns
 
-- **Vanished decisions** occur when teams neglect to document their decisions. This delays design due to repetitive decision-making.
-- **Ignored reports** occur when teams neglect to tune analyzers to reduce false positives. This delays triage due to noisy reports.
-- **Protracted reviews** occur when teams neglect to automate checks. This delays feedback due to tedious reviews.
+- **Vanished decisions** stem from settling design questions in reviews and chats without recording the outcome, so teams debate them again for each new API and answer them differently, delaying design and integration.
+- **Clogged reviews** stem from checking conventions by hand, so violations surface only in reviews, each reviewer catches different ones, and design questions wait for later rounds, delaying feedback.
 
 ## Actions
 
 - Publish **guides** to systemize design decisions.
-- Publish **rulesets** to encode the guides, and curate them to reduce false positives.
-- Adopt **linters** to validate specifications against rulesets in the IDE and in pipelines.
+- Publish **rulesets** to encode the guides into automated checks.
+- Adopt **linters** to check specifications against the rulesets locally and in pipelines.
