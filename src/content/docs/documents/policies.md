@@ -97,11 +97,11 @@ Define lifecycle stages. Focus on stability and audience.
 
 Consider the following lifecycle stages:
 
-- **Experimental** — ready to assess but can receive breaking changes.
-- **Production** — ready to adopt and can receive only non-breaking changes.
-- **Deprecation** — on hold but retains support until a declared sunset date.
-- **Retirement** — withdrawn and no longer usable.
+- **Experimental**: ready to assess but can receive breaking changes.
+- **Production**: ready to adopt and can receive only non-breaking changes.
+- **Deprecation**: on hold but retains support until a declared sunset date.
+- **Retirement**: withdrawn and no longer usable.
 
-Mark deprecated elements in specifications, so that [detectors](/api4c-framework/pillars/continuity/) can check removals against sunset dates. Communicate deprecation and sunset timelines to consumers using the standard Deprecation ([RFC 9745](https://datatracker.ietf.org/doc/html/rfc9745)) and Sunset ([RFC 8594](https://datatracker.ietf.org/doc/html/rfc8594)) headers.
+Mark deprecated elements in specifications, so that [detectors](/api4c-framework/pillars/continuity/) can check removals against sunset dates. Communicate deprecation and sunset timelines to consumers through the standard Deprecation ([RFC 9745](https://datatracker.ietf.org/doc/html/rfc9745)) and Sunset ([RFC 8594](https://datatracker.ietf.org/doc/html/rfc8594)) headers.
 
 Examples: [Google: Stability Levels](https://google.aip.dev/181), [Kubernetes: Deprecation Policy](https://kubernetes.io/docs/reference/using-api/deprecation-policy/).

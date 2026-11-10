@@ -2,7 +2,7 @@
 
 A framework for governing APIs.
 
-Published at [Hrytsenko - API4C Framework](https://hrytsenko.github.io/api4c-framework/).
+Published at [API4C Framework](https://hrytsenko.github.io/api4c-framework/).
 
 ## Content
 
@@ -101,8 +101,9 @@ Achieve a result by ... that ..., at the expense of ... It supports the [pillar]
 
 ```sh
 npm install
-npm run dev      # http://localhost:4321/api4c-framework/
-npm run build    # output in dist/
+npm run dev      # run at http://localhost:4321/api4c-framework/
+lychee .         # check links
+vale .           # check prose
 ```
 
-Pushing to `main` deploys the site via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+Pushing to `main` deploys the site, checks prose with [Vale](https://vale.sh/), and checks links with [lychee](https://lychee.cli.rs/), which also runs weekly.

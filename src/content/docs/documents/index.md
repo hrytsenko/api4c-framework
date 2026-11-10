@@ -13,5 +13,5 @@ The documents record the decisions that APIs share, so that designers apply them
 
 Publish the documents for each independent audience that consumes APIs in a certain style. The audience (external customers, partners, internal teams) shapes expectations on stability and support; the style (REST, GraphQL, gRPC) shapes decisions on how APIs look and what counts as a breaking change. For example:
 
-- REST and GraphQL APIs for external customers may need separate documents due to different styles: GraphQL APIs report errors in the response body and typically evolve without versions.
-- REST APIs for external customers and for internal integration may need separate documents due to different audiences: internal consumers can coordinate migrations and accept shorter deprecation periods.
+- REST and GraphQL APIs for external customers need separate documents due to different styles: GraphQL APIs report errors in the response body and typically evolve without versions.
+- REST APIs for external customers and for internal integration need separate documents due to different audiences: internal consumers can coordinate migrations and accept shorter deprecation periods.

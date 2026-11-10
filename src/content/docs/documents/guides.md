@@ -13,10 +13,10 @@ Guides collect the decisions that the [consistency](/api4c-framework/pillars/con
 
 Describe each decision with the following attributes:
 
-- **Identifier** — a stable key that rulesets and reviews refer to.
-- **Title** — a one-line statement of the decision.
-- **Severity** — the requirement level, marked with [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) keywords, which rulesets map to linter severities.
-- **Rationale** — the reasons behind the decision, so that teams can apply it to cases the guide does not cover.
+- **Identifier**: a stable key that rulesets and reviews refer to.
+- **Title**: a one-line statement of the decision.
+- **Severity**: the requirement level, marked with [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) keywords, which rulesets map to linter severities.
+- **Rationale**: the reasons behind the decision, so that teams can apply it to cases the guide does not cover.
 
 ### Protocols
 
@@ -42,7 +42,7 @@ Define how APIs represent data in requests and responses.
 
 Decide on patterns and case styles for **names** of operations, path segments, parameters, headers, and fields. Consider kebab case for path segments, and snake case for fields and parameters. Consider a glossary of known names that separates domain-agnostic ones, such as `created_at`, from domain-specific ones.
 
-Decide on canonical **formats** for timestamps, durations, currencies, countries, identifiers, and enumerations. Consider [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) timestamps, [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) durations, [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) currency codes, [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html) country codes, and [RFC 9562](https://datatracker.ietf.org/doc/html/rfc9562) UUIDs. Consider strings for enumerations, and expect clients to tolerate values added later.
+Decide on canonical **formats** for timestamps, durations, currencies, countries, identifiers, and enumerations. Consider [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) timestamps and durations, [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency codes, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country codes, and [RFC 9562](https://datatracker.ietf.org/doc/html/rfc9562) UUIDs. Consider strings for enumerations, and expect clients to tolerate values added later.
 
 Decide on a format for **errors** that clients can handle generically. Consider [RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457) problem details, with a type that identifies the error, a human-readable detail, and extensions for specifics, such as invalid fields.
 
@@ -60,4 +60,4 @@ Decide on semantics for batch, long-running, and upload **tasks**. Consider per-
 
 Decide on semantics for **events**, including payloads, delivery, and ordering. Consider [CloudEvents](https://cloudevents.io/) envelopes with thin payloads that identify changed resources, so that clients fetch the current state rather than act on a stale one. Consider at-least-once delivery with retries, and expect clients to deduplicate events by identifier and tolerate them out of order.
 
-Examples: [Zalando: Batch & Bulk requests](https://opensource.zalando.com/restful-api-guidelines/#152), [Adidas: Long running tasks](https://adidas.gitbook.io/api-guidelines/rest-api-guidelines/execution/long-running-tasks).
+Examples: [Zalando: Batch or bulk requests](https://opensource.zalando.com/restful-api-guidelines/#152), [Adidas: Long running tasks](https://adidas.gitbook.io/api-guidelines/rest-api-guidelines/execution/long-running-tasks).
